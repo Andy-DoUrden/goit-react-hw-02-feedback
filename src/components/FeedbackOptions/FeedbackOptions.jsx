@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Container, ControlsBtn } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onClick }) => (
@@ -20,5 +21,10 @@ export const FeedbackOptions = ({ options, onClick }) => (
     })}
   </Container>
 );
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array,
+  onClick: PropTypes.func,
+};
 
 export default FeedbackOptions;
